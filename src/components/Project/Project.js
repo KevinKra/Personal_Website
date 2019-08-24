@@ -10,7 +10,7 @@ export default function Project(props) {
           className="preview-section"
           style={{ transform: "skew(5deg)" }}
         >
-          <h2>{props.title}</h2>
+          <h2>{props.title} - Preview</h2>
           <InsetImage image={props.image} />
         </section>
       )}
@@ -32,11 +32,7 @@ export default function Project(props) {
           }
         >
           <h1 className="project-title">{props.title}</h1>
-          <a
-            href="https://github.com/KevinKra/PalettePicker-fe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={props.githubURL} target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </div>
@@ -57,7 +53,7 @@ export default function Project(props) {
       </section>
       {props.formatTitleLeft && (
         <section className="preview-section">
-          <h2>{props.title}</h2>
+          <h2>{props.title} - Preview</h2>
           <InsetImage image={props.image} />
         </section>
       )}
