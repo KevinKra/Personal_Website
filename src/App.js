@@ -1,19 +1,34 @@
 import React from "react";
 import "./App.scss";
+import "./styles/_animations.scss";
 import Project from "./components/Project/Project";
 import imgPalettePicker from "./images/PalettePickerFScopy.jpg";
 import imgLightSide from "./images/swapiFS.jpg";
 import imgMovieTracker from "./images/MovieTracker.jpg";
+import { transformFile } from "@babel/core";
 
 function App() {
+  // const skills = ["JavaScript", "React", "Git", "SCSS", "HTML"];
   return (
     <div className='App'>
       <section className='AboutMe'>
         <aside className='bio'>
           <p>Who I am</p>
         </aside>
-        <aside className='skills'>
-          <p>Skills</p>
+        <aside className='skillset'>
+          <h1 className='skillset-title'>My Skills</h1>
+          <ul className='skills'>
+            {/* Update SCSS $total-items as list increases */}
+            <li className='skill'>React</li>
+            <li className='skill'>Redux</li>
+            <li className='skill'>JavaScript</li>
+            <li className='skill'>SCSS</li>
+            <li className='skill'>CSS</li>
+            <li className='skill'>Node</li>
+            <li className='skill'>Express</li>
+            <li className='skill'>Git Workflow</li>
+            <li className='skill'>Testing</li>
+          </ul>
         </aside>
       </section>
       <section className='Projects'>
