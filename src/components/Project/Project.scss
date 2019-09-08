@@ -1,11 +1,4 @@
-$accent-red: red;
-$accent-blue: cadetblue;
-$background-dark: rgb(31, 32, 32);
-$background-light: white;
-$font-light: white;
-$font-dark: black;
-$shadow-primary: 0px 5px 7px 1px rgba(0, 0, 0, 0.75);
-$display-font: "Alfa Slab One", cursive;
+@import "../../styles/_variables";
 
 .Project {
   position: relative;
