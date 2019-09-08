@@ -1,11 +1,4 @@
-$accent-red: red;
-$accent-blue: cadetblue;
-$background-dark: rgb(31, 32, 32);
-$background-light: white;
-$font-light: white;
-$font-dark: black;
-$shadow-primary: 0px 5px 7px 1px rgba(0, 0, 0, 0.75);
-$display-font: "Alfa Slab One", cursive;
+@import "../../styles/_variables";
 
 .Project {
   position: relative;
@@ -34,67 +27,91 @@ $display-font: "Alfa Slab One", cursive;
     border-right: 1px dashed $accent-red;
     border-left: 1px dashed $accent-red;
   }
-}
-
-.preview-section {
-  position: relative;
-  z-index: 2;
-  background-color: $background-light;
-  border: 1px solid $accent-blue;
-  border-top: 7px solid $accent-blue;
-  padding: 1rem;
-  transform: skew(-5deg);
-  h2 {
-    color: black;
-    margin: 0;
-    margin-bottom: 0.5rem;
-  }
-}
-
-.project-header {
-  position: absolute;
-  top: -2rem;
-  background-color: $accent-red;
-  padding: 0.35rem 2rem;
-  transform: skew(20deg);
-  .header-skew {
-    transform: skew(-20deg);
-  }
-  .project-title {
-    font-family: $display-font;
-    font-size: 36px;
-    font-weight: 100;
-    margin: 0;
-  }
-  a {
-    color: $font-light;
-  }
-}
-
-.details-section {
-  height: 100%;
-  min-width: 450px;
-  margin: 0 2rem 0 0;
-  .details-paragraph {
-    margin-top: 4rem;
-    width: 100%;
-  }
-  .built-with {
-    position: absolute;
-    bottom: -5rem;
-    border: 1px solid $accent-red;
-    height: 50px;
-    background-color: $background-dark;
+  .preview-section {
+    position: relative;
+    z-index: 2;
+    background-color: $background-light;
     border: 1px solid $accent-blue;
-    border-bottom: 7px solid $accent-blue;
+    border-top: 7px solid $accent-blue;
+    padding: 1rem;
+    transform: skew(-5deg);
+    box-shadow: 2px 7px 8px -4px $background-dark;
+    .preview-header {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+    }
+    .preview-icons {
+      // border: 1px solid red;
+    }
+    h2 {
+      color: black;
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+    span {
+      font-size: 16px;
+    }
     i {
-      padding: 0.5rem;
+      color: black;
+      transition: 0.09s transform cubic-bezier(1, 0.29, 0, 2.65);
+      margin: 0 0.3rem;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+      }
     }
   }
-  p {
-    font-family: "Slabo 27px", serif;
-    font-size: 18px;
-    padding: 0 0.5rem;
-    margin: 0;
+
+  .project-header {
+    position: absolute;
+    top: -2rem;
+    background-color: $accent-red;
+    padding: 0.35rem 2rem;
+    transform: skew(20deg);
+    .header-skew {
+      transform: skew(-20deg);
+    }
+    .project-title {
+      font-family: $display-font;
+      font-size: 36px;
+      font-weight: 100;
+      margin: 0;
+    }
+    a {
+      color: $font-light;
+    }
+    a:nth-of-type(2) {
+      margin-left: 1rem;
+    }
+  }
+
+  .details-section {
+    height: 100%;
+    min-width: 450px;
+    margin: 0 2rem 0 0;
+    .details-paragraph {
+      margin-top: 4rem;
+      margin-left: 0.5rem;
+      width: 100%;
+    }
+    .built-with {
+      position: absolute;
+      bottom: -5rem;
+      border: 1px solid $accent-red;
+      height: 50px;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      i {
+        padding: 0.5rem;
+      }
+    }
+    p {
+      font-family: "Slabo 27px", serif;
+      font-size: 18px;
+      padding: 0 0.5rem;
+      margin: 0;
+    }
   }
 }
