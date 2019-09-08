@@ -7,6 +7,8 @@
 .AboutMe {
   display: flex;
   background-color: $background-dark;
+  border-bottom: 5px solid $accent-blue;
+  box-shadow: $shadow-primary;
   color: white;
   height: 100vh;
   .bio {
@@ -19,12 +21,30 @@
     border-bottom: none;
     flex: 1;
   }
-  .skillset-title {
+  .aboutme-title {
     font-family: $display-font;
     font-size: 28px;
     margin: 0.5rem 0;
     font-weight: 100;
     text-align: center;
+  }
+  .aboutme-body {
+    width: 90%;
+    height: 85vh;
+    margin: 0 auto;
+    color: black;
+    p {
+      margin: 0.5rem auto;
+      max-width: 500px;
+      font-size: 14px;
+      padding: 0.5rem;
+      background-color: white;
+      border-bottom: 5px solid $accent-blue;
+      box-shadow: $shadow-primary;
+      animation: fadeInLeft 1s cubic-bezier(0.22, 1.57, 0.5, 0.84);
+      animation-fill-mode: both;
+      transform: scale(1);
+    }
   }
   .skills {
     margin: 0;
@@ -45,17 +65,32 @@
     animation-fill-mode: both;
   }
   p {
-    margin: 0;
+    text-indent: 2rem;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+    &:hover {
+      cursor: pointer;
+    }
   }
   li {
     color: white;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
-$total-items: 9;
+$total-items: 10;
+$total-paras: 4;
 @for $i from 1 through $total-items {
   .skill:nth-child(#{$i}) {
     animation-delay: 0.25s * $i;
+  }
+}
+
+@for $i from 1 through $total-paras {
+  .aboutme-body > p:nth-child(#{$i}) {
+    animation-delay: 0.15s * $i;
   }
 }
 
@@ -71,9 +106,10 @@ $total-items: 9;
   border: 1px solid $accent-blue;
   height: 0;
   .section-title-details {
-    transform: translateY(-5vh);
+    transform: translateY(-6vh);
     padding: 1rem;
     background-color: $accent-red;
+    box-shadow: $shadow-primary;
     padding: 0.2rem 1.5rem;
   }
   .page-section-title {
