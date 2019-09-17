@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./App.scss";
 import "./styles/_animations.scss";
 import Project from "./components/Project/Project";
@@ -9,7 +10,6 @@ import dwarfOne from "./images/artwork/dwarf_1.png";
 import dwarfTwo from "./images/artwork/dwarf_2.png";
 import knightOne from "./images/artwork/knight_1.png";
 import knightTwo from "./images/artwork/knight_2.png";
-import monsterOne from "./images/artwork/monster_1.png";
 import faceOne from "./images/artwork/face_1.png";
 import guyOne from "./images/artwork/guy_1.png";
 import cowboyOne from "./images/artwork/cowboy_1.png";
@@ -17,19 +17,64 @@ import cowboyOne from "./images/artwork/cowboy_1.png";
 function App() {
   return (
     <div className="App">
+      <nav className="NavBar">
+        <ul className="links">
+          <Link
+            activeClass="active"
+            className="nav-link"
+            to="AboutMe"
+            smooth={true}
+            offset={-30}
+            spy={true}
+          >
+            About Me
+          </Link>
+          <Link
+            activeClass="active"
+            className="nav-link"
+            to="Projects"
+            smooth={true}
+            offset={-30}
+            spy={true}
+          >
+            Projects
+          </Link>
+          <Link
+            activeClass="active"
+            className="nav-link"
+            to="PageFooter"
+            smooth={true}
+            offset={0}
+            spy={true}
+          >
+            Contact
+          </Link>
+        </ul>
+      </nav>
       <section className="Intro">
         <div className="blurb">
           <h1>Kevin Krato</h1>
           <p>Frontend Developer - Designer - Illustrator</p>
         </div>
-        <img src={dwarfTwo} alt="A dwarf" className="image-1" />
-        <img src={dwarfOne} alt="A dwarf" className="image-2" />
-        <img src={knightOne} alt="A knight" className="image-3" />
-        {/* <img src={monsterOne} alt="A monster" className="image-4" /> */}
-        <img src={faceOne} alt="A males face" className="image-5" />
-        <img src={knightTwo} alt="A knight in armor" className="image-6" />
-        <img src={guyOne} alt="A man with a hat" className="image-7" />
-        <img src={cowboyOne} alt="A cowboy" className="image-8" />
+        <img src={dwarfTwo} alt="A dwarf" className="image-1 slide-appear" />
+        <img src={dwarfOne} alt="A dwarf" className="image-2 slide-appear" />
+        <img src={knightOne} alt="A knight" className="image-3 slide-appear" />
+        <img
+          src={faceOne}
+          alt="A males face"
+          className="image-5 slide-appear"
+        />
+        <img
+          src={knightTwo}
+          alt="A knight in armor"
+          className="image-6 slide-appear"
+        />
+        <img
+          src={guyOne}
+          alt="A man with a hat"
+          className="image-7 slide-appear"
+        />
+        <img src={cowboyOne} alt="A cowboy" className="image-8 slide-appear" />
       </section>
       <section className="AboutMe">
         <aside className="bio">
