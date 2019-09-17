@@ -4,11 +4,113 @@
   height: 150vh;
 }
 
+.NavBar {
+  position: fixed;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $background-dark;
+  box-shadow: 1px 1px 5px black;
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .nav-link {
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .active {
+    color: red;
+    text-decoration: underline;
+  }
+  ul {
+    margin: 0.4rem 0;
+    padding: 0;
+  }
+  li {
+    margin: 0;
+    list-style-type: none;
+  }
+}
+
+.Intro {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-dark;
+  color: white;
+  .blurb {
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 5px black;
+  }
+  img {
+    position: absolute;
+    height: 400px;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(1px 1px 5px black);
+    // &:hover {
+    //   transform: scale(1.07);
+    // }
+  }
+  .image-1 {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+  }
+  .image-2 {
+    z-index: 4;
+    left: 7vw;
+    bottom: -1vh;
+  }
+  .image-3 {
+    z-index: 3;
+    left: 25vw;
+    bottom: -9vh;
+  }
+  .image-4 {
+    z-index: 1;
+    left: 40vw;
+    bottom: -11vh;
+  }
+  .image-5 {
+    z-index: 2;
+    right: -2vw;
+    bottom: -4vh;
+  }
+  .image-6 {
+    z-index: 1;
+    right: 17vw;
+    bottom: -8vh;
+  }
+  .image-7 {
+    height: 250px;
+    z-index: 2;
+    right: 40vw;
+    bottom: 0vh;
+  }
+  .image-8 {
+    z-index: 1;
+    right: 30vw;
+    bottom: -4vh;
+  }
+}
+
 .AboutMe {
   display: flex;
   background-color: $background-dark;
   border-bottom: 5px solid $accent-blue;
   box-shadow: $shadow-primary;
+  position: relative;
+  z-index: 4;
   color: white;
   height: 100vh;
   .bio {
