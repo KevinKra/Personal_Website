@@ -1,18 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
-import "./App.scss";
-import "./styles/_animations.scss";
+import Intro from "./components/Intro/Intro";
 import Project from "./components/Project/Project";
 import imgPalettePicker from "./images/PalettePickerFScopy.jpg";
 import imgLightSide from "./images/swapiFS.jpg";
 import imgMovieTracker from "./images/MovieTracker.jpg";
-import dwarfOne from "./images/artwork/dwarf_1.png";
-import dwarfTwo from "./images/artwork/dwarf_2.png";
-import knightOne from "./images/artwork/knight_1.png";
-import knightTwo from "./images/artwork/knight_2.png";
-import faceOne from "./images/artwork/face_1.png";
-import guyOne from "./images/artwork/guy_1.png";
-import cowboyOne from "./images/artwork/cowboy_1.png";
+import "./App.scss";
+import "./styles/_animations.scss";
 
 function App() {
   return (
@@ -51,31 +45,7 @@ function App() {
           </Link>
         </ul>
       </nav>
-      <section className="Intro">
-        <div className="blurb">
-          <h1>Kevin Krato</h1>
-          <p>Frontend Developer - Designer - Illustrator</p>
-        </div>
-        <img src={dwarfTwo} alt="A dwarf" className="image-1 slide-appear" />
-        <img src={dwarfOne} alt="A dwarf" className="image-2 slide-appear" />
-        <img src={knightOne} alt="A knight" className="image-3 slide-appear" />
-        <img
-          src={faceOne}
-          alt="A males face"
-          className="image-5 slide-appear"
-        />
-        <img
-          src={knightTwo}
-          alt="A knight in armor"
-          className="image-6 slide-appear"
-        />
-        <img
-          src={guyOne}
-          alt="A man with a hat"
-          className="image-7 slide-appear"
-        />
-        <img src={cowboyOne} alt="A cowboy" className="image-8 slide-appear" />
-      </section>
+      <Intro />
       <section className="AboutMe">
         <aside className="bio">
           <h1 className="aboutme-title">My Background</h1>

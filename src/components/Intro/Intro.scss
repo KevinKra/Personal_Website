@@ -1,29 +1,63 @@
+@import "../../styles/variables";
+
 .Intro {
-  position: relative;
-  padding-top: 5rem;
-  border: 1px solid red;
-  border-bottom: 8px solid red;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  height: 50vh;
-  .content {
-    border: 1px solid blue;
-    background-color: lightgray;
-    margin-left: 350px;
-    margin-right: 1rem;
-    height: 110%;
-    width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-dark;
+  color: white;
+  .blurb {
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 5px black;
   }
-  .intro-slides {
-    transform: skew(2deg);
+  img {
     position: absolute;
-    left: 2rem;
-    top: 4.5rem;
-    border: 1px solid red;
-    background-color: lightgrey;
-    width: 300px;
-    height: 115%;
-    ul {
-      transform: skew(-2deg);
-    }
+    height: 400px;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(1px 1px 5px black);
+  }
+  .image-1 {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+  }
+  .image-2 {
+    z-index: 4;
+    left: 7vw;
+    bottom: -1vh;
+  }
+  .image-3 {
+    z-index: 3;
+    left: 25vw;
+    bottom: -9vh;
+  }
+  .image-4 {
+    z-index: 1;
+    left: 40vw;
+    bottom: -11vh;
+  }
+  .image-5 {
+    z-index: 2;
+    right: -2vw;
+    bottom: -4vh;
+  }
+  .image-6 {
+    z-index: 1;
+    right: 17vw;
+    bottom: -8vh;
+  }
+  .image-7 {
+    height: 250px;
+    z-index: 2;
+    right: 40vw;
+    bottom: 0vh;
+  }
+  .image-8 {
+    z-index: 1;
+    right: 30vw;
+    bottom: -4vh;
   }
 }
