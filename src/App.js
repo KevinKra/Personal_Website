@@ -110,10 +110,11 @@ function App() {
             <li className="skill">React</li>
             <li className="skill">Redux</li>
             <li className="skill">JavaScript</li>
-            <li className="skill">SCSS</li>
-            <li className="skill">CSS</li>
+            <li className="skill">JQuery</li>
             <li className="skill">Node</li>
             <li className="skill">Express</li>
+            <li className="skill">SCSS</li>
+            <li className="skill">CSS</li>
             <li className="skill">Git Workflow</li>
             <li className="skill">Testing</li>
             <li className="skill">Agile Development</li>

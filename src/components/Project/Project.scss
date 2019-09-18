@@ -118,7 +118,6 @@
 
 @media screen and (min-width: 2500px) {
   .Project {
-    color: red;
     margin: 9% auto 3% auto;
     max-width: 65%;
 
@@ -132,7 +131,6 @@
 
 @media screen and (max-width: 2300px) {
   .Project {
-    color: blue;
     margin: 9% auto 3% auto;
     max-width: 75%;
     .preview-section {
@@ -150,7 +148,6 @@
 
 @media screen and (max-width: 2100px) {
   .Project {
-    color: green;
     margin: 9% auto 3% auto;
     max-width: 85%;
     .preview-section {
@@ -168,7 +165,6 @@
 
 @media screen and (max-width: 1680px) {
   .Project {
-    color: yellowgreen;
     margin: 9% auto 3% auto;
     max-width: 85%;
     .preview-section {
@@ -186,7 +182,6 @@
 
 @media screen and (max-width: 1400px) {
   .Project {
-    color: lightgoldenrodyellow;
     padding: 1rem 0rem 0.4rem 1rem;
     margin: 13% auto 3% auto;
     min-width: 90%;
@@ -207,7 +202,6 @@
 
 @media screen and (max-width: 1175px) {
   .Project {
-    color: blueviolet;
     margin: 14% auto 3% auto;
     padding: 1rem 0rem 0.4rem 1rem;
     min-width: 90%;
@@ -232,7 +226,6 @@
 
 @media screen and (max-width: 1050px) {
   .Project {
-    color: darkgoldenrod;
     margin: 10rem auto 3% auto;
     padding: 1rem 0rem 0.4rem 1rem;
     min-width: 90%;
@@ -264,7 +257,6 @@
 
 @media screen and (max-width: 900px) {
   .Project {
-    color: darkcyan;
     margin: 8rem auto 3% auto;
     padding: 1rem 0rem 0.4rem 1rem;
     min-width: 90%;
@@ -289,6 +281,125 @@
       p {
         padding: 0;
         font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Project {
+    display: flex;
+    margin: 20rem auto 0rem auto;
+    flex-direction: column;
+    align-items: center;
+    min-height: 13.5rem;
+    .border-style {
+      width: 97%;
+    }
+    .preview-section {
+      position: absolute;
+      bottom: 75%;
+      left: 6%;
+      margin: auto;
+      width: 80%;
+      transform: skew(0deg) !important;
+      h2 {
+        margin-bottom: 0.3rem;
+        font-size: 16px;
+      }
+      span {
+        font-size: 12px;
+      }
+      i {
+        transform: scale(1);
+        margin: 0rem 0.3rem 0.3rem 0.3rem;
+        font-size: 22px;
+        transition: 0.9s ease-in;
+        &:focus {
+          transform: scale(1);
+          color: lightgrey;
+        }
+      }
+    }
+    .project-header {
+      position: absolute;
+      top: 14%;
+      left: -5%;
+      width: 100%;
+      margin: 0 auto !important;
+      left: -1rem !important;
+      z-index: 3;
+      font-size: 12px;
+      padding: 0.2rem 1rem;
+      transform: skew(0deg) !important;
+      text-align: center;
+      justify-content: space-between;
+      box-shadow: 1px 3px 7px black;
+      .project-title {
+        font-size: 22px;
+      }
+      .header-skew {
+        transform: skew(0deg) !important;
+      }
+      h1 {
+        transform: skew(0deg) !important;
+      }
+    }
+    .details-section {
+      .built-with {
+        position: relative;
+        text-align: center;
+        font-size: 14px;
+        left: 0.3rem !important;
+        margin: auto;
+        top: 1rem;
+        width: 100%;
+      }
+      p {
+        padding: 1rem 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .Project {
+    margin-top: 15rem;
+    min-height: 55vh;
+    .preview-section {
+      left: 4.7%;
+    }
+    .details-section {
+      margin-top: 2rem;
+      .built-with {
+        position: relative;
+        text-align: center;
+        font-size: 16px;
+        left: 0.3rem !important;
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .Project {
+    margin-top: 18rem;
+    min-height: 45vh;
+    .preview-section {
+      left: 4.7%;
+    }
+    .details-section {
+      margin-top: 2rem;
+      .built-with {
+        position: relative;
+        text-align: center;
+        font-size: 16px;
+        left: 0.3rem !important;
+        margin: auto;
+        width: 100%;
       }
     }
   }

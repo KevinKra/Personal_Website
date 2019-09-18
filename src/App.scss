@@ -211,3 +211,67 @@ $total-paras: 4;
     background-color: lightgrey;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .NavBar {
+    .links {
+      width: 100%;
+    }
+  }
+  .AboutMe {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+    .aboutme-body {
+      width: 90%;
+      min-height: 85vh;
+      margin: 0 auto;
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .AboutMe {
+    display: flex;
+    flex-direction: column;
+    min-height: 215vh;
+    aside {
+      min-height: 20vh !important;
+    }
+  }
+  .section-title-container {
+    .section-title-details {
+      transform: translateY(-6vh);
+    }
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .NavBar {
+    .links {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  .AboutMe {
+    display: flex;
+    flex-direction: column;
+    min-height: 285vh;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .AboutMe {
+    display: flex;
+    flex-direction: column;
+    min-height: 175vh;
+  }
+  .section-title-container {
+    .section-title-details {
+      transform: translateY(-5vh);
+    }
+  }
+}
