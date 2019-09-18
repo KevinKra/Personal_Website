@@ -193,6 +193,7 @@ $total-paras: 4;
   textarea {
     padding: 0.2rem;
     font-size: 16px;
+    border: 1px solid slategray;
     &:focus {
       outline: none;
     }
@@ -318,7 +319,7 @@ $total-paras: 4;
   }
 }
 
-@media only screen and (max-width: 570px) {
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .NavBar {
     .links {
       font-size: 14px;
@@ -328,7 +329,7 @@ $total-paras: 4;
   .AboutMe {
     display: flex;
     flex-direction: column;
-    min-height: 285vh;
+    min-height: 105vh;
   }
 }
 
@@ -336,7 +337,7 @@ $total-paras: 4;
   .AboutMe {
     display: flex;
     flex-direction: column;
-    min-height: 175vh;
+    min-height: 190vh;
   }
   .section-title-container {
     .section-title-details {
