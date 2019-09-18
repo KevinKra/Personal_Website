@@ -27,6 +27,9 @@
     text-shadow: 1px 1px 5px black;
     transform: translateY(-25px);
   }
+  h1 {
+    opacity: 1;
+  }
   img {
     position: relative;
     z-index: 1;
@@ -66,7 +69,7 @@
     bottom: -8vh;
   }
   .image-7 {
-    height: 45%;
+    height: 40%;
     z-index: 3;
     right: 35vw;
     bottom: -5vh;
@@ -75,5 +78,151 @@
     z-index: 2;
     right: 30vw;
     bottom: -4vh;
+  }
+}
+
+// 2560, 1920, 1680, 1440, 800
+
+@media screen and (max-width: 2300px) {
+  .Intro {
+    font-size: 20px;
+    color: purple;
+    .image-3 {
+      visibility: visible;
+      bottom: -10vh;
+    }
+    .image-7 {
+      visibility: visible;
+      height: 37%;
+    }
+    img {
+      height: 48%;
+    }
+  }
+}
+
+@media screen and (max-width: 2100px) {
+  .Intro {
+    color: cyan;
+    font-size: 18px;
+    .image-7 {
+      visibility: visible;
+      height: 34%;
+      right: 42vw;
+      bottom: -3vh;
+    }
+    img {
+      height: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .Intro {
+    color: green;
+    font-size: 16px;
+    .image-3 {
+      visibility: visible;
+    }
+    .image-7 {
+      display: none;
+      right: 38vw;
+    }
+    .image-8 {
+      right: 30vw;
+    }
+    img {
+      height: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .Intro {
+    color: red;
+    font-size: 16px;
+    .image-3 {
+      visibility: visible;
+    }
+    .image-7 {
+      visibility: hidden;
+    }
+    .image-8 {
+      right: 30vw;
+    }
+    img {
+      height: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Intro {
+    color: blue;
+    font-size: 18px;
+    .image-3 {
+      visibility: visible;
+    }
+    .image-7 {
+      visibility: hidden;
+    }
+    .image-8 {
+      right: 35vw;
+    }
+    img {
+      height: 42%;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Intro {
+    color: coral;
+    font-size: 18px;
+    .image-3 {
+      opacity: 0;
+      display: none;
+    }
+    .image-7 {
+      visibility: hidden;
+    }
+    .image-8 {
+      right: 35vw;
+    }
+    img {
+      height: 36%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Intro {
+    color: greenyellow;
+    font-size: 18px;
+    .image-1 {
+      display: none;
+    }
+    .image-2 {
+      // display: none;
+      left: -8vw;
+    }
+    .image-3 {
+      visibility: hidden;
+    }
+    .image-5 {
+      right: -18vw;
+    }
+    .image-6 {
+      right: 16vw;
+    }
+    .image-7 {
+      visibility: hidden;
+    }
+    .image-8 {
+      right: 35vw;
+    }
+    img {
+      height: 40%;
+    }
   }
 }

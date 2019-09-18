@@ -30,20 +30,17 @@
   .preview-section {
     position: relative;
     z-index: 2;
+    width: 170%;
     background-color: $background-light;
     border: 1px solid $accent-blue;
     border-top: 7px solid $accent-blue;
     padding: 1rem;
     transform: skew(-5deg);
     box-shadow: 2px 7px 8px -4px $background-dark;
-    // overflow-x: hidden;
     .preview-header {
       display: flex;
       justify-content: center;
       justify-content: space-between;
-    }
-    .preview-icons {
-      // border: 1px solid red;
     }
     h2 {
       color: black;
@@ -113,6 +110,186 @@
       font-size: 18px;
       padding: 0 0.5rem;
       margin: 0;
+    }
+  }
+}
+
+// 2560, 1920, 1680, 1440, 800
+
+@media screen and (min-width: 2500px) {
+  .Project {
+    color: red;
+    margin: 9% auto 3% auto;
+    max-width: 65%;
+
+    .preview-section {
+      height: 37vh;
+      width: 150%;
+      margin: 0% 3%;
+    }
+  }
+}
+
+@media screen and (max-width: 2300px) {
+  .Project {
+    color: blue;
+    margin: 9% auto 3% auto;
+    max-width: 75%;
+    .preview-section {
+      margin: 0% 3%;
+      width: 150%;
+      height: 33vh;
+    }
+    .details-section {
+      .built-with {
+        bottom: -4.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 2100px) {
+  .Project {
+    color: green;
+    margin: 9% auto 3% auto;
+    max-width: 85%;
+    .preview-section {
+      margin: 0% 3%;
+      height: 43vh;
+      width: 115%;
+    }
+  }
+  .details-section {
+    .built-with {
+      bottom: -4.5rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .Project {
+    color: yellowgreen;
+    margin: 9% auto 3% auto;
+    max-width: 85%;
+    .preview-section {
+      margin: 0% 3%;
+      width: 200%;
+      height: 38vh;
+    }
+    .details-section {
+      .built-with {
+        bottom: -4.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .Project {
+    color: lightgoldenrodyellow;
+    padding: 1rem 0rem 0.4rem 1rem;
+    margin: 13% auto 3% auto;
+    min-width: 90%;
+    .preview-section {
+      height: 40vh;
+      max-width: 200%;
+    }
+    .details-section {
+      .built-with {
+        bottom: -4.5rem;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .Project {
+    color: blueviolet;
+    margin: 14% auto 3% auto;
+    padding: 1rem 0rem 0.4rem 1rem;
+    min-width: 90%;
+    .preview-section {
+      height: 40vh;
+      width: 300%;
+    }
+    .details-section {
+      font-size: 14px;
+      min-width: 250px;
+      .details-paragraph {
+      }
+      .built-with {
+        bottom: -4.5rem;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .Project {
+    color: darkgoldenrod;
+    margin: 10rem auto 3% auto;
+    padding: 1rem 0rem 0.4rem 1rem;
+    min-width: 90%;
+    .preview-section {
+      height: 40vh;
+      width: 400%;
+    }
+    .project-header {
+      font-size: 14px;
+      padding: 0.5rem 1.5rem;
+      .project-title {
+        font-size: 28px;
+      }
+    }
+    .details-section {
+      font-size: 12px;
+      min-width: 200px;
+      .built-with {
+        bottom: -4.5rem;
+        font-size: 12px;
+      }
+      p {
+        padding: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Project {
+    color: darkcyan;
+    margin: 8rem auto 3% auto;
+    padding: 1rem 0rem 0.4rem 1rem;
+    min-width: 90%;
+    .preview-section {
+      height: 33vh;
+      font-size: 14px;
+    }
+    .project-header {
+      font-size: 14px;
+      padding: 0.5rem 1.5rem;
+      .project-title {
+        font-size: 28px;
+      }
+    }
+    .details-section {
+      font-size: 12px;
+      min-width: 200px;
+      .built-with {
+        bottom: -4.5rem;
+        font-size: 12px;
+      }
+      p {
+        padding: 0;
+        font-size: 14px;
+      }
     }
   }
 }
