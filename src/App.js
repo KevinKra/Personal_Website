@@ -57,10 +57,7 @@ function App() {
       </nav>
       <Intro />
       <section className="about-me-divider">
-        <div className="about-me-foreground"></div>
-        <div className="about-me-background">
-          <h1>Who Am I</h1>
-        </div>
+        <h1>Who Am I</h1>
       </section>
       <section className="AboutMe">
         <aside className="bio">
