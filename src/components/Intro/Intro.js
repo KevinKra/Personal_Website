@@ -9,9 +9,6 @@ import cowboyOne from "../../images/artwork/cowboy_1.png";
 import "./Intro.scss";
 
 export default class Intro extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <section className="Intro">
