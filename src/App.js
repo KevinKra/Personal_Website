@@ -16,9 +16,19 @@ function App() {
           <Link
             activeClass="active"
             className="nav-link"
-            to="AboutMe"
+            to="Intro"
             smooth={true}
             offset={-30}
+            spy={true}
+          >
+            Home
+          </Link>
+          <Link
+            activeClass="active"
+            className="nav-link"
+            to="AboutMe"
+            smooth={true}
+            offset={-107}
             spy={true}
           >
             About Me
@@ -46,6 +56,12 @@ function App() {
         </ul>
       </nav>
       <Intro />
+      <section className="about-me-divider">
+        <div className="about-me-foreground"></div>
+        <div className="about-me-background">
+          <h1>About Me</h1>
+        </div>
+      </section>
       <section className="AboutMe">
         <aside className="bio">
           <h1 className="aboutme-title">My Background</h1>
