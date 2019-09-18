@@ -59,7 +59,7 @@ function App() {
       <section className="about-me-divider">
         <div className="about-me-foreground"></div>
         <div className="about-me-background">
-          <h1>About Me</h1>
+          <h1>Who Am I</h1>
         </div>
       </section>
       <section className="AboutMe">
