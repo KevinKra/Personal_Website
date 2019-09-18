@@ -15,7 +15,7 @@ export default class Intro extends Component {
   render() {
     return (
       <section className="Intro">
-        <div className="blurb">
+        <div className="blurb slide-appear-2">
           <h1>Kevin Krato</h1>
           <p>Frontend Developer - Designer - Illustrator</p>
         </div>
