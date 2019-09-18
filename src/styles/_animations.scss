@@ -139,6 +139,17 @@
   }
 }
 
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.slide-appear {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation-fill-mode: forwards;
+}
+
 .slide-appear-1 {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
