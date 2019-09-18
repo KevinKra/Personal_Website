@@ -29,20 +29,28 @@ export default class Intro extends Component {
         </div>
         <div className="user-links fadeIn">
           <a href={require("../../assets/Resume_kevinkrato.pdf")} download>
-            <i class="fas fa-2x fa-file"></i>
+            <i className="fas fa-2x fa-file"></i>
           </a>
-          <a href="https://github.com/KevinKra" target="_blank">
-            <i class="fab fa-2x fa-github"></i>
+          <a
+            href="https://github.com/KevinKra"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i className="fab fa-2x fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/kevin-krato/" target="_blank">
-            <i class="fab fa-2x fa-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/kevin-krato/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i className="fab fa-2x fa-linkedin"></i>
           </a>
           <CopyToClipboard
             onCopy={this.onCopy}
             text={"kevinkrato92@gmail.com"}
             onMouseLeave={() => setTimeout(this.hideMessage, 1500)}
           >
-            <i class="fas fa-2x fa-envelope"></i>
+            <i className="fas fa-2x fa-envelope"></i>
           </CopyToClipboard>
           <div
             className={
