@@ -16,7 +16,7 @@
   background-color: $background-dark;
   border: 1px solid $accent-blue;
   border-bottom: 7px solid $accent-blue;
-  box-shadow: $shadow-primary;
+  filter: drop-shadow(1px 3px 3px black);
   .border-style {
     position: absolute;
     top: 5px;
@@ -36,6 +36,7 @@
     padding: 1rem;
     transform: skew(-5deg);
     box-shadow: 2px 7px 8px -4px $background-dark;
+    // overflow-x: hidden;
     .preview-header {
       display: flex;
       justify-content: center;

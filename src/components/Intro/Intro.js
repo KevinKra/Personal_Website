@@ -1,41 +1,52 @@
-import React from "react";
+import React, { Component } from "react";
+import dwarfOne from "../../images/artwork/dwarf_1.png";
+import dwarfTwo from "../../images/artwork/dwarf_2.png";
+import knightOne from "../../images/artwork/knight_1.png";
+import knightTwo from "../../images/artwork/knight_2.png";
+import faceOne from "../../images/artwork/face_1.png";
+import guyOne from "../../images/artwork/guy_1.png";
+import cowboyOne from "../../images/artwork/cowboy_1.png";
 import "./Intro.scss";
 
-export default function Intro() {
-  return (
-    <section className="Intro">
-      <div className="content">
-        <h1>Kevin Krato</h1>
-        <p>
-          For me, being a web developer is the perfect career. The constant need
-          to continue learning, the challenges, and the opportunities to create
-          living artwork and designs is my motivation. Having the opportunity to
-          see the culmination of countless hours of work come together to create
-          something beautiful, and knowing that the next time it will be even
-          better, motivates me and excites me.
-        </p>
-        <div className="intro-slides">
-          <ul>
-            <li>Frontend Engineer</li>
-            <li>Illustrator</li>
-            <li>Designer</li>
-            <li>Veteran</li>
-            <li>Problem Solver</li>
-            <li>History Nerd</li>
-          </ul>
-          <ul>
-            <li>React</li>
-            <li>React Native</li>
-            <li>Vue</li>
-            <li>JavaScript</li>
-            <li>Node</li>
-            <li>Redux</li>
-            <li>SASS</li>
-            <li>CSS</li>
-            <li>SQL</li>
-          </ul>
+export default class Intro extends Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return (
+      <section className="Intro">
+        <div className="blurb">
+          <h1>Kevin Krato</h1>
+          <p>Frontend Developer - Designer - Illustrator</p>
         </div>
-      </div>
-    </section>
-  );
+        <img src={dwarfTwo} alt="A dwarf" className="image-1 slide-appear-2" />
+        <img src={dwarfOne} alt="A dwarf" className="image-2 slide-appear-1" />
+        <img
+          src={knightOne}
+          alt="A knight"
+          className="image-3 slide-appear-2"
+        />
+        <img
+          src={faceOne}
+          alt="A males face"
+          className="image-5 slide-appear-1"
+        />
+        <img
+          src={knightTwo}
+          alt="A knight in armor"
+          className="image-6 slide-appear-4"
+        />
+        <img
+          src={guyOne}
+          alt="A man with a hat"
+          className="image-7 slide-appear-2"
+        />
+        <img
+          src={cowboyOne}
+          alt="A cowboy"
+          className="image-8 slide-appear-3"
+        />
+      </section>
+    );
+  }
 }

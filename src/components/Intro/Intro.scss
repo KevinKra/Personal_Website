@@ -1,29 +1,81 @@
+@import "../../styles/variables";
+
 .Intro {
   position: relative;
-  padding-top: 5rem;
-  border: 1px solid red;
-  border-bottom: 8px solid red;
+  -webkit-transform: translateZ(4px);
+  -moz-transform: translateZ(4px);
+  -o-transform: translateZ(4px);
+  transform: translateZ(4px);
+  z-index: 4;
+  overflow: hidden;
+  border-bottom: 4px solid black;
+  filter: drop-shadow(1px 1px 15px black);
+  // box-shadow: 1px 1px 15px black;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  height: 50vh;
-  .content {
-    border: 1px solid blue;
-    background-color: lightgray;
-    margin-left: 350px;
-    margin-right: 1rem;
-    height: 110%;
-    width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-dark;
+  transition: 0.5s ease-in-out;
+  color: white;
+  .blurb {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 5px black;
+    transform: translateY(-25px);
   }
-  .intro-slides {
-    transform: skew(2deg);
+  img {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
     position: absolute;
-    left: 2rem;
-    top: 4.5rem;
-    border: 1px solid red;
-    background-color: lightgrey;
-    width: 300px;
-    height: 115%;
-    ul {
-      transform: skew(-2deg);
-    }
+    // height: 400px;
+    height: 50%;
+    filter: drop-shadow(1px 1px 8px black);
+  }
+  .image-1 {
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+  }
+  .image-2 {
+    z-index: 4;
+    left: 7vw;
+    bottom: -1vh;
+  }
+  .image-3 {
+    z-index: 3;
+    left: 25vw;
+    bottom: -9vh;
+  }
+  .image-4 {
+    z-index: 2;
+    left: 40vw;
+    bottom: -11vh;
+  }
+  .image-5 {
+    z-index: 3;
+    right: -3vw;
+    bottom: -4vh;
+  }
+  .image-6 {
+    z-index: 2;
+    right: 17vw;
+    bottom: -8vh;
+  }
+  .image-7 {
+    height: 250px;
+    z-index: 3;
+    right: 40vw;
+    bottom: 0vh;
+  }
+  .image-8 {
+    z-index: 2;
+    right: 30vw;
+    bottom: -4vh;
   }
 }
