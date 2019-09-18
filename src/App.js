@@ -57,10 +57,7 @@ function App() {
       </nav>
       <Intro />
       <section className="about-me-divider">
-        <div className="about-me-foreground"></div>
-        <div className="about-me-background">
-          <h1>Who Am I</h1>
-        </div>
+        <h1>Who Am I</h1>
       </section>
       <section className="AboutMe">
         <aside className="bio">
@@ -113,10 +110,11 @@ function App() {
             <li className="skill">React</li>
             <li className="skill">Redux</li>
             <li className="skill">JavaScript</li>
-            <li className="skill">SCSS</li>
-            <li className="skill">CSS</li>
+            <li className="skill">JQuery</li>
             <li className="skill">Node</li>
             <li className="skill">Express</li>
+            <li className="skill">SCSS</li>
+            <li className="skill">CSS</li>
             <li className="skill">Git Workflow</li>
             <li className="skill">Testing</li>
             <li className="skill">Agile Development</li>
@@ -160,11 +158,33 @@ function App() {
           details={`Galleria brings the movie-watching experience directly to its users by providing a visually appealing interactive design that both provides the ability to login to an account and favorite content based on your personal preferences. Search through various different genre and find the movies and shows that interest you the most!`}
         />
       </section>
-      <footer className="PageFooter">
+      <section className="PageFooter">
         <div className="section-title-container">
           <h2 className="page-section-title">Reach out!</h2>
         </div>
-      </footer>
+        <div className="footer-form">
+          <form
+            className="email-form"
+            action="https://formspree.io/kevinkrato92@gmail.com"
+            method="POST"
+          >
+            <label htmlFor="name">Your name:</label>
+            <input type="text" name="name" placeholder="Name"></input>
+            <label htmlFor="name">Email:</label>
+            <input type="email" placeholder="Email" name="_replyto"></input>
+            <label htmlFor="message">Message:</label>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" value="Send">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
   );
 }
