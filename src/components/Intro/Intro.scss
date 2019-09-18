@@ -9,8 +9,7 @@
   z-index: 4;
   overflow: hidden;
   border-bottom: 4px solid black;
-  filter: drop-shadow(1px 1px 15px black);
-  // box-shadow: 1px 1px 15px black;
+  box-shadow: 1px 1px 15px black;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -67,10 +66,10 @@
     bottom: -8vh;
   }
   .image-7 {
-    height: 250px;
+    height: 45%;
     z-index: 3;
-    right: 40vw;
-    bottom: 0vh;
+    right: 35vw;
+    bottom: -5vh;
   }
   .image-8 {
     z-index: 2;
