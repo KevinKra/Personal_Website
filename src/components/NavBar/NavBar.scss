@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.NavBar {
+  position: fixed;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $background-dark;
+  filter: drop-shadow(1px 1px 15px black);
+  border-bottom: 3px solid red;
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .nav-link {
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s color ease-in;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .active {
+    color: red;
+  }
+  ul {
+    margin: 0.4rem 0;
+    padding: 0;
+  }
+  li {
+    margin: 0;
+    list-style-type: none;
+  }
+}
