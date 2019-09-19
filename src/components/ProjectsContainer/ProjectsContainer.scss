@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.Projects {
+  position: relative;
+  z-index: 3;
+  padding-bottom: 8rem;
+  background: white;
+
+  .section-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $accent-blue;
+    height: 0;
+    .section-title-details {
+      transform: translateY(-1vh);
+      padding: 1rem;
+      background-color: $accent-red;
+      box-shadow: $shadow-primary;
+      padding: 0.2rem 1.5rem;
+    }
+    .page-section-title {
+      font-family: $display-font;
+      font-size: 24px;
+      font-weight: 100;
+      padding: 0.6rem 0;
+      margin: 0;
+      color: white;
+    }
+    i {
+      color: white;
+    }
+  }
+}
