@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.about-me-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(155, 1, 1);
+  h1 {
+    font-family: $display-font;
+    font-weight: 100;
+    font-size: 2rem;
+    text-shadow: -3px 3px 1px black;
+  }
+}
