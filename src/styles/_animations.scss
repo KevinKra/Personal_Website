@@ -109,6 +109,15 @@
   }
 }
 
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes slideInUp {
   from {
     opacity: 0;
