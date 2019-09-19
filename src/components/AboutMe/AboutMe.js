@@ -4,9 +4,9 @@ import "./AboutMe.scss";
 export default function AboutMe() {
   return (
     <section className="AboutMe">
-      <aside className="bio">
-        <h1 className="aboutme-title">My Background</h1>
-        <article className="aboutme-body">
+      <aside>
+        <h1 className="title">My Background</h1>
+        <article className="history-body">
           <p>
             I am a former <strong>Naval Intelligence CryptoLinguist</strong> who
             served nationally with the NSA. I have a passion for learning, being
@@ -47,8 +47,8 @@ export default function AboutMe() {
           </p>
         </article>
       </aside>
-      <aside className="skillset">
-        <h1 className="aboutme-title">My Skills</h1>
+      <aside>
+        <h1 className="title">My Skills</h1>
         <ul className="skills">
           {/* Update SCSS $total-items as list increases */}
           <li className="skill">React</li>
