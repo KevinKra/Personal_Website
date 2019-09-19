@@ -1,0 +1,99 @@
+@import "../../styles/variables";
+
+.AboutMe {
+  display: flex;
+  border-bottom: 5px solid $accent-blue;
+  position: relative;
+  -webkit-transform: translateZ(4px);
+  -moz-transform: translateZ(4px);
+  -o-transform: translateZ(4px);
+  transform: translateZ(4px);
+  z-index: 4;
+  box-shadow: 1px 1px 15px $background-dark;
+  color: white;
+  height: 100vh;
+  .bio {
+    border: 1px solid white;
+    border-bottom: none;
+    background-color: rgb(39, 39, 39);
+    flex: 1;
+  }
+  .skillset {
+    border: 1px solid white;
+    border-bottom: none;
+    background-color: rgb(39, 39, 39);
+    flex: 1;
+  }
+  .aboutme-title {
+    font-family: $display-font;
+    font-size: 28px;
+    margin: 0.5rem 0;
+    font-weight: 100;
+    text-align: center;
+  }
+  .aboutme-body {
+    width: 90%;
+    height: 85vh;
+    margin: 0 auto;
+    color: black;
+    p {
+      margin: 0.5rem auto;
+      max-width: 500px;
+      font-size: 14px;
+      padding: 0.5rem;
+      background-color: white;
+      border-bottom: 5px solid $accent-blue;
+      filter: drop-shadow(1px 3px 3px black);
+      animation: fadeInLeft 1s cubic-bezier(0.22, 1.57, 0.5, 0.84);
+      animation-fill-mode: both;
+      transform: scale(1);
+    }
+  }
+  .skills {
+    margin: 0;
+    padding: 0;
+  }
+  .skill {
+    position: relative;
+    list-style-type: none;
+    margin-top: 0.2rem;
+    border: 1px solid $accent-blue;
+    border-bottom: 5px solid $accent-blue;
+    background-color: $background-dark;
+    filter: drop-shadow(1px 3px 3px black);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    animation: fadeIn 0.5s linear;
+    animation-fill-mode: both;
+  }
+  p {
+    text-indent: 2rem;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+    &:hover {
+      cursor: default;
+    }
+  }
+  li {
+    color: white;
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+//SCSS animation behaviors
+$total-items: 11;
+$total-paras: 4;
+@for $i from 1 through $total-items {
+  .skill:nth-child(#{$i}) {
+    animation-delay: 0.25s * $i;
+  }
+}
+
+@for $i from 1 through $total-paras {
+  .aboutme-body > p:nth-child(#{$i}) {
+    animation-delay: 0.15s * $i;
+  }
+}
