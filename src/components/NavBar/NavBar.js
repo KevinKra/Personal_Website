@@ -14,27 +14,27 @@ export default function NavBar() {
           offset={-30}
           spy={true}
         >
-          Home
+          HOME
         </Link>
         <Link
           activeClass="active"
           className="nav-link"
           to="AboutMe"
           smooth={true}
-          offset={-107}
+          offset={-50}
           spy={true}
         >
-          About Me
+          ABOUT ME
         </Link>
         <Link
           activeClass="active"
           className="nav-link"
-          to="Projects"
+          to="tab-marker"
           smooth={true}
-          offset={-30}
+          offset={-48}
           spy={true}
         >
-          Projects
+          PROJECTS
         </Link>
         <Link
           activeClass="active"
@@ -44,7 +44,7 @@ export default function NavBar() {
           offset={0}
           spy={true}
         >
-          Contact
+          CONTACT
         </Link>
       </ul>
     </nav>
