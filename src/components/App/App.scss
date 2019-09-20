@@ -1,101 +1,65 @@
 @import "../../styles/variables";
 
 .App {
-  max-width: 100vw;
+  // max-width: 99.8vw;
   overflow-x: hidden;
-  background-color: $background-dark;
+  background-color: white;
 }
 
-@media screen and (min-width: 2500px) {
-  .email-form {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid red;
-    background-color: white;
-    border-radius: 5px;
-    margin-top: 5rem;
-    width: 50%;
-    padding: 1rem;
-    box-shadow: 1px 1px 15px black;
-  }
-  .Projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .NavBar {
-    font-size: 18px;
-  }
-  .AboutMe {
-    margin: 0 auto;
-    width: 65%;
-    height: 80%;
-    transform: translateY(-1%);
-    background-color: lightgrey;
+@media (min-width: 1281px) {
+  .Project {
+    color: greenyellow;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .NavBar {
-    .links {
-      width: 100%;
-    }
-  }
-  .AboutMe {
-    display: flex;
-    flex-direction: column;
-    min-height: 200vh;
-    .aboutme-body {
-      width: 90%;
-      min-height: 85vh;
-      margin: 0 auto;
-      p {
-        font-size: 12px;
-      }
-    }
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .Project {
+    color: blue;
   }
 }
 
-@media only screen and (max-width: 660px) {
-  .AboutMe {
-    display: flex;
-    flex-direction: column;
-    min-height: 215vh;
-    aside {
-      min-height: 20vh !important;
-    }
-  }
-  .section-title-container {
-    .section-title-details {
-      transform: translateY(-6vh);
-    }
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Project {
+    color: green;
   }
 }
 
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-  .NavBar {
-    .links {
-      font-size: 14px;
-      width: 100%;
-    }
-  }
-  .AboutMe {
-    display: flex;
-    flex-direction: column;
-    min-height: 105vh;
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Project {
+    color: yellow;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  .AboutMe {
-    display: flex;
-    flex-direction: column;
-    min-height: 190vh;
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Project {
+    color: purple;
   }
-  .section-title-container {
-    .section-title-details {
-      transform: translateY(-5vh);
-    }
-  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
 }

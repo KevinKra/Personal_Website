@@ -3,10 +3,6 @@
 
 .Intro {
   position: relative;
-  -webkit-transform: translateZ(4px);
-  -moz-transform: translateZ(4px);
-  -o-transform: translateZ(4px);
-  transform: translateZ(4px);
   z-index: 4;
   overflow: hidden;
   border-bottom: 4px solid black;
@@ -37,7 +33,7 @@
     margin-bottom: 12rem;
     opacity: 0;
     animation: fadeIn2 2s forwards;
-    animation-delay: 1s;
+    animation-delay: 2.3s;
 
     i {
       color: rgb(230, 230, 230);

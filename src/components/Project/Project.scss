@@ -6,10 +6,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 85%;
   height: 30vh;
   padding-top: 3rem;
-  margin: 12% auto;
+  margin: 7% auto 14% auto;
   color: $font-light;
   background-color: $background-dark;
   border: 1px solid $accent-blue;
@@ -33,6 +33,13 @@
     background-color: $accent-red;
     padding: 0.35rem 2rem;
     transform: skew(20deg);
+  }
+  .ph-right {
+    right: 2rem;
+    transform: skew(-20deg);
+  }
+  .ph-left {
+    left: 2rem;
   }
   .header-skew {
     transform: skew(-20deg);
@@ -78,9 +85,11 @@
   }
   .ps-right {
     left: 3rem;
+    transform: skew(5deg);
   }
   .ps-left {
     right: 3rem;
+    transform: skew(-5deg);
   }
 
   .preview-header {
@@ -108,6 +117,12 @@
       padding: 0.5rem;
     }
   }
+  .bw-right {
+    right: 2rem;
+  }
+  .bw-left {
+    left: 2rem;
+  }
   p {
     font-family: "Slabo 27px", serif;
     font-size: 18px;
@@ -117,17 +132,235 @@
 
   .preview-icons {
     color: $font-dark;
-    transition: 0.09s transform cubic-bezier(1, 0.29, 0, 2.65);
     margin: 0 0.3rem;
+    transition: 0.09s all cubic-bezier(1, 0.29, 0, 2.65);
     :first-child {
       margin-right: 0.3rem;
     }
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.08);
-    }
     a {
       color: $font-dark;
+    }
+    i {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+      }
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .Project {
+    color: greenyellow;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .Project {
+    color: blue;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Project {
+    color: green;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Project {
+    color: yellow;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Project {
+    color: purple;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .Project {
+    height: 300px;
+    width: 95%;
+    margin: 93% auto;
+    color: cyan;
+    .border-style {
+      width: 97%;
+    }
+    .project-header {
+      position: absolute;
+      z-index: 3;
+      top: 1rem;
+      text-align: center;
+      padding: 0.35rem 1rem;
+      transform: skew(0deg);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    .header-skew {
+      transform: skew(-0deg) !important;
+    }
+    .details-paragraph {
+      top: 5.5rem;
+      text-align: center;
+      margin: 1rem auto;
+      width: 90%;
+      right: 0;
+      left: 0;
+    }
+    .preview-section {
+      top: -15rem;
+      width: 85%;
+      height: 35vh;
+      margin: 0 auto;
+    }
+    .ps-right {
+      left: 0%;
+      right: 0%;
+      transform: skew(0deg);
+    }
+    .ps-left {
+      right: 0%;
+      left: 0%;
+      transform: skew(0deg);
+    }
+    .built-with {
+      bottom: -4.6rem;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      width: 100%;
+      text-align: center;
+      i {
+        padding: 0.5rem;
+      }
+    }
+    .bw-right {
+      right: 0rem;
+    }
+    .bw-left {
+      left: 0rem;
+    }
+    p {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 321px) {
+  .Project {
+    height: 300px;
+    width: 95%;
+    margin: 93% auto;
+    color: violet;
+    .border-style {
+      width: 96%;
+    }
+    .project-header {
+      position: absolute;
+      z-index: 3;
+      top: 1rem;
+      text-align: center;
+      font-size: 14px;
+      padding: 0.35rem 1rem;
+      transform: skew(0deg);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    .header-skew {
+      transform: skew(-0deg) !important;
+    }
+    .project-title {
+      font-size: 26px;
+    }
+    .details-paragraph {
+      top: 5rem;
+      text-align: center;
+      margin: 1rem auto;
+      width: 93%;
+      right: 0;
+      left: 0;
+    }
+    .preview-section {
+      top: -13rem;
+      width: 85%;
+      height: 35vh;
+      margin: 0 auto;
+    }
+    .preview-header {
+      font-size: 10px;
+    }
+    .ps-right {
+      left: 0%;
+      right: 0%;
+      transform: skew(0deg);
+    }
+    .ps-left {
+      right: 0%;
+      left: 0%;
+      transform: skew(0deg);
+    }
+    .built-with {
+      bottom: -4.6rem;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      width: 100%;
+      text-align: center;
+      i {
+        padding: 0.5rem;
+      }
+    }
+    .bw-right {
+      right: 0rem;
+    }
+    .bw-left {
+      left: 0rem;
+    }
+    p {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
     }
   }
 }

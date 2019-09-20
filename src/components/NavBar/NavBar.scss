@@ -6,9 +6,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: $background-dark;
-  filter: drop-shadow(1px 1px 15px black);
-  border-bottom: 3px solid red;
+  background-color: $background-dark2;
+  padding: 0.5rem 0;
+  // filter: drop-shadow(1px 1px 15px black);
+  border-bottom: 2px solid red;
   .links {
     display: flex;
     justify-content: space-around;
@@ -18,7 +19,7 @@
     padding: 0;
     color: white;
     text-decoration: none;
-    transition: 0.4s color ease-in;
+    transition: 0.2s color ease-in;
     &:hover {
       cursor: pointer;
     }
@@ -33,5 +34,76 @@
   li {
     margin: 0;
     list-style-type: none;
+  }
+}
+
+@media (min-width: 1281px) {
+  .Project {
+    color: greenyellow;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .Project {
+    color: blue;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Project {
+    color: green;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Project {
+    color: yellow;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Project {
+    color: purple;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .NavBar {
+    .links {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 321px) {
+  .NavBar {
+    .links {
+      font-size: 12px;
+    }
   }
 }
