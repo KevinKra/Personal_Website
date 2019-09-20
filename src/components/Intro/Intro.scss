@@ -217,7 +217,7 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1481px) {
 }
 
 /* 
@@ -226,9 +226,6 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .Project {
-    color: blue;
-  }
 }
 
 /* 
@@ -238,7 +235,6 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .Intro {
-    color: red;
     height: 70vh;
     font-size: 16px;
     .image-1 {
@@ -276,9 +272,6 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .Project {
-    color: yellow;
-  }
 }
 
 /* 
@@ -287,9 +280,6 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .Project {
-    color: purple;
-  }
 }
 
 /* 
