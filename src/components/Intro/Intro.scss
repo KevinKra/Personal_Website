@@ -3,10 +3,6 @@
 
 .Intro {
   position: relative;
-  -webkit-transform: translateZ(4px);
-  -moz-transform: translateZ(4px);
-  -o-transform: translateZ(4px);
-  transform: translateZ(4px);
   z-index: 4;
   overflow: hidden;
   border-bottom: 4px solid black;
@@ -37,7 +33,7 @@
     margin-bottom: 12rem;
     opacity: 0;
     animation: fadeIn2 2s forwards;
-    animation-delay: 1s;
+    animation-delay: 2.3s;
 
     i {
       color: rgb(230, 230, 230);
@@ -221,29 +217,48 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media (min-width: 1481px) {
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .Intro {
-    font-size: 18px;
+    height: 70vh;
+    font-size: 16px;
     .image-1 {
-      display: none;
+      // display: none;
+      left: 0vw;
     }
     .image-2 {
-      left: -8vw;
+      left: 8vw;
     }
     .image-3 {
       visibility: hidden;
     }
     .image-5 {
-      right: -18vw;
+      right: -8vw;
+      bottom: -1vh;
     }
     .image-6 {
-      right: 16vw;
+      right: 17vw;
     }
     .image-7 {
       visibility: hidden;
     }
     .image-8 {
-      right: 35vw;
+      right: 37vw;
     }
     img {
       height: 40%;
@@ -251,7 +266,28 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
   .Intro {
     font-size: 16px;
     .image-1 {
@@ -259,7 +295,7 @@
     }
     .image-2 {
       // display: none;
-      left: -10vw;
+      left: -25vw;
     }
     .image-3 {
       visibility: hidden;
@@ -284,7 +320,7 @@
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (min-width: 320px) and (max-width: 321px) {
   .Intro {
     font-size: 16px;
     .image-1 {
@@ -292,7 +328,7 @@
     }
     .image-2 {
       // display: none;
-      left: -25vw;
+      left: -10vw;
     }
     .image-3 {
       visibility: hidden;

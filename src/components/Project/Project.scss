@@ -3,70 +3,194 @@
 .Project {
   position: relative;
   z-index: 2;
-  min-width: 70rem;
-  height: 16rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
-  padding-right: 3rem;
-  margin: 1rem;
-  margin-top: 15rem;
+  width: 85%;
+  height: 30vh;
+  padding-top: 3rem;
+  margin: 7% auto 14% auto;
   color: $font-light;
   background-color: $background-dark;
   border: 1px solid $accent-blue;
   border-bottom: 7px solid $accent-blue;
-  filter: drop-shadow(1px 3px 3px black);
+  filter: drop-shadow(1px 3px 3px $font-dark);
   .border-style {
     position: absolute;
     top: 5px;
     left: 5px;
-    height: 96%;
+    height: 95%;
     width: 99%;
+    z-index: 1;
     border: 1px solid $accent-red;
     border-right: 1px dashed $accent-red;
     border-left: 1px dashed $accent-red;
   }
-  .preview-section {
-    position: relative;
+  .project-header {
+    position: absolute;
     z-index: 2;
-    width: 170%;
+    top: -2rem;
+    background-color: $accent-red;
+    padding: 0.35rem 2rem;
+    transform: skew(20deg);
+  }
+  .ph-right {
+    right: 2rem;
+    transform: skew(-20deg);
+  }
+  .ph-left {
+    left: 2rem;
+  }
+  .header-skew {
+    transform: skew(-20deg);
+  }
+  .project-title {
+    font-family: $display-font;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0;
+  }
+  .title-links {
+    color: $font-light;
+    margin: 0 0.5rem;
+  }
+  .details-paragraph {
+    // ----
+    position: absolute;
+    top: 3rem;
+    z-index: 2;
+    margin: 1rem 1rem;
+    width: 37%;
+    max-height: 60%;
+  }
+  .dp-right {
+    right: 1rem;
+  }
+  .dp-left {
+    left: 1rem;
+  }
+  .preview-section {
+    // ----
+    position: absolute;
+    top: -4rem;
+    z-index: 2;
+    width: 50%;
+    height: 50vh;
     background-color: $background-light;
     border: 1px solid $accent-blue;
     border-top: 7px solid $accent-blue;
     padding: 1rem;
     transform: skew(-5deg);
     box-shadow: 2px 7px 8px -4px $background-dark;
-    .preview-header {
-      display: flex;
-      justify-content: center;
-      justify-content: space-between;
-    }
+  }
+  .ps-right {
+    left: 3rem;
+    transform: skew(5deg);
+  }
+  .ps-left {
+    right: 3rem;
+    transform: skew(-5deg);
+  }
+
+  .preview-header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    color: $font-dark;
     h2 {
-      color: black;
       margin: 0;
       margin-bottom: 0.5rem;
     }
     span {
       font-size: 16px;
     }
+  }
+  .built-with {
+    position: absolute;
+    bottom: -5rem;
+    border: 1px solid $accent-red;
+    height: 50px;
+    background-color: $background-dark;
+    border: 1px solid $accent-blue;
+    border-bottom: 7px solid $accent-blue;
     i {
-      color: black;
-      transition: 0.09s transform cubic-bezier(1, 0.29, 0, 2.65);
-      margin: 0 0.3rem;
+      padding: 0.5rem;
+    }
+  }
+  .bw-right {
+    right: 2rem;
+  }
+  .bw-left {
+    left: 2rem;
+  }
+  p {
+    font-family: "Slabo 27px", serif;
+    font-size: 18px;
+    padding: 0 0.5rem;
+    margin: 0;
+  }
+
+  .preview-icons {
+    color: $font-dark;
+    margin: 0 0.3rem;
+    transition: 0.09s all cubic-bezier(1, 0.29, 0, 2.65);
+    :first-child {
+      margin-right: 0.3rem;
+    }
+    a {
+      color: $font-dark;
+    }
+    i {
       &:hover {
         cursor: pointer;
         transform: scale(1.08);
       }
     }
   }
+}
 
-  .project-header {
-    position: absolute;
-    top: -2rem;
-    background-color: $accent-red;
-    padding: 0.35rem 2rem;
-    transform: skew(20deg);
+@media (min-width: 1481px) {
+  .Project {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 20vh;
+    padding-top: 3rem;
+    margin: 7% auto 14% auto;
+    color: $font-light;
+    background-color: $background-dark;
+    border: 1px solid $accent-blue;
+    border-bottom: 7px solid $accent-blue;
+    filter: drop-shadow(1px 3px 3px $font-dark);
+    .border-style {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 95%;
+      width: 99%;
+      z-index: 1;
+      border: 1px solid $accent-red;
+      border-right: 1px dashed $accent-red;
+      border-left: 1px dashed $accent-red;
+    }
+    .project-header {
+      position: absolute;
+      z-index: 2;
+      top: -2rem;
+      background-color: $accent-red;
+      padding: 0.35rem 2rem;
+      transform: skew(20deg);
+    }
+    .ph-right {
+      right: 4rem;
+      transform: skew(-20deg);
+    }
+    .ph-left {
+      left: 4rem;
+    }
     .header-skew {
       transform: skew(-20deg);
     }
@@ -76,22 +200,60 @@
       font-weight: 100;
       margin: 0;
     }
-    a {
+    .title-links {
       color: $font-light;
+      margin: 0 0.5rem;
     }
-    a:nth-of-type(2) {
-      margin-left: 1rem;
-    }
-  }
-
-  .details-section {
-    height: 100%;
-    min-width: 450px;
-    margin: 0 2rem 0 0;
     .details-paragraph {
-      margin-top: 4rem;
-      margin-left: 0.5rem;
-      width: 100%;
+      // ----
+      position: absolute;
+      top: 3rem;
+      z-index: 2;
+      margin: 1rem 1rem;
+      width: 25%;
+      max-height: 60%;
+    }
+    .dp-right {
+      right: 3rem;
+    }
+    .dp-left {
+      left: 3rem;
+    }
+    .preview-section {
+      // ----
+      position: absolute;
+      top: -8rem;
+      z-index: 2;
+      width: 60%;
+      height: 40vh;
+      background-color: $background-light;
+      border: 1px solid $accent-blue;
+      border-top: 7px solid $accent-blue;
+      padding: 1rem;
+      transform: skew(-5deg);
+      box-shadow: 2px 7px 8px -4px $background-dark;
+    }
+    .ps-right {
+      left: 3rem;
+      transform: skew(5deg);
+    }
+    .ps-left {
+      right: 3rem;
+      transform: skew(-5deg);
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      color: $font-dark;
+      h2 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+      span {
+        font-size: 16px;
+      }
     }
     .built-with {
       position: absolute;
@@ -105,302 +267,586 @@
         padding: 0.5rem;
       }
     }
+    .bw-right {
+      right: 2rem;
+    }
+    .bw-left {
+      left: 2rem;
+    }
     p {
       font-family: "Slabo 27px", serif;
       font-size: 18px;
       padding: 0 0.5rem;
       margin: 0;
     }
-  }
-}
 
-// 2560, 1920, 1680, 1440, 800
-
-@media screen and (min-width: 2500px) {
-  .Project {
-    margin: 9% auto 3% auto;
-    max-width: 65%;
-
-    .preview-section {
-      height: 37vh;
-      width: 150%;
-      margin: 0% 3%;
-    }
-  }
-}
-
-@media screen and (max-width: 2300px) {
-  .Project {
-    margin: 9% auto 3% auto;
-    max-width: 75%;
-    .preview-section {
-      margin: 0% 3%;
-      width: 150%;
-      height: 33vh;
-    }
-    .details-section {
-      .built-with {
-        bottom: -4.5rem;
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
+      transition: 0.09s all cubic-bezier(1, 0.29, 0, 2.65);
+      :first-child {
+        margin-right: 0.3rem;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 2100px) {
-  .Project {
-    margin: 9% auto 3% auto;
-    max-width: 85%;
-    .preview-section {
-      margin: 0% 3%;
-      height: 43vh;
-      width: 115%;
-    }
-  }
-  .details-section {
-    .built-with {
-      bottom: -4.5rem !important;
-    }
-  }
-}
-
-@media screen and (max-width: 1680px) {
-  .Project {
-    margin: 9% auto 3% auto;
-    max-width: 85%;
-    .preview-section {
-      margin: 0% 3%;
-      width: 200%;
-      height: 38vh;
-    }
-    .details-section {
-      .built-with {
-        bottom: -4.5rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .Project {
-    padding: 1rem 0rem 0.4rem 1rem;
-    margin: 13% auto 3% auto;
-    min-width: 90%;
-    .preview-section {
-      height: 40vh;
-      max-width: 200%;
-    }
-    .details-section {
-      .built-with {
-        bottom: -4.5rem;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1175px) {
-  .Project {
-    margin: 14% auto 3% auto;
-    padding: 1rem 0rem 0.4rem 1rem;
-    min-width: 90%;
-    .preview-section {
-      height: 46vh;
-      width: 300%;
-    }
-    .details-section {
-      font-size: 14px;
-      min-width: 250px;
-      .details-paragraph {
-      }
-      .built-with {
-        bottom: -4.5rem;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .Project {
-    margin: 10rem auto 3% auto;
-    padding: 1rem 0rem 0.4rem 1rem;
-    min-width: 90%;
-    .preview-section {
-      height: 40vh;
-      width: 400%;
-    }
-    .project-header {
-      font-size: 14px;
-      padding: 0.5rem 1.5rem;
-      .project-title {
-        font-size: 28px;
-      }
-    }
-    .details-section {
-      font-size: 12px;
-      min-width: 200px;
-      .built-with {
-        bottom: -4.5rem;
-        font-size: 12px;
-      }
-      p {
-        padding: 0;
-        font-size: 14px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .Project {
-    margin: 8rem auto 3% auto;
-    padding: 1rem 0rem 0.4rem 1rem;
-    min-width: 90%;
-    .preview-section {
-      height: 33vh;
-      font-size: 14px;
-    }
-    .project-header {
-      font-size: 14px;
-      padding: 0.5rem 1.5rem;
-      .project-title {
-        font-size: 28px;
-      }
-    }
-    .details-section {
-      font-size: 12px;
-      min-width: 200px;
-      .built-with {
-        bottom: -4.5rem;
-        font-size: 12px;
-      }
-      p {
-        padding: 0;
-        font-size: 14px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .Project {
-    display: flex;
-    margin: 20rem auto 0rem auto;
-    flex-direction: column;
-    align-items: center;
-    min-height: 13.5rem;
-    .border-style {
-      width: 97%;
-    }
-    .preview-section {
-      position: absolute;
-      bottom: 75%;
-      left: 6%;
-      margin: auto;
-      width: 80%;
-      transform: skew(0deg) !important;
-      h2 {
-        margin-bottom: 0.3rem;
-        font-size: 16px;
-      }
-      span {
-        font-size: 12px;
+      a {
+        color: $font-dark;
       }
       i {
-        transform: scale(1);
-        margin: 0rem 0.3rem 0.3rem 0.3rem;
-        font-size: 22px;
-        transition: 0.9s ease-in;
-        &:focus {
-          transform: scale(1);
-          color: lightgrey;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.08);
         }
       }
     }
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  @import "../../styles/_variables";
+
+  .Project {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    height: 30vh;
+    padding-top: 3rem;
+    margin: 7% auto 14% auto;
+    color: $font-light;
+    background-color: $background-dark;
+    border: 1px solid $accent-blue;
+    border-bottom: 7px solid $accent-blue;
+    filter: drop-shadow(1px 3px 3px $font-dark);
+    .border-style {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 95%;
+      width: 99%;
+      z-index: 1;
+      border: 1px solid $accent-red;
+      border-right: 1px dashed $accent-red;
+      border-left: 1px dashed $accent-red;
+    }
     .project-header {
       position: absolute;
-      top: 14%;
-      left: -5%;
-      width: 100%;
-      margin: 0 auto !important;
-      left: -1rem !important;
-      z-index: 3;
-      font-size: 12px;
-      padding: 0.2rem 1rem;
-      transform: skew(0deg) !important;
-      text-align: center;
+      z-index: 2;
+      top: -2rem;
+      background-color: $accent-red;
+      padding: 0.35rem 2rem;
+      transform: skew(20deg);
+    }
+    .ph-right {
+      right: 2rem;
+      transform: skew(-20deg);
+    }
+    .ph-left {
+      left: 2rem;
+    }
+    .header-skew {
+      transform: skew(-20deg);
+    }
+    .project-title {
+      font-family: $display-font;
+      font-size: 36px;
+      font-weight: 100;
+      margin: 0;
+    }
+    .title-links {
+      color: $font-light;
+      margin: 0 0.5rem;
+    }
+    .details-paragraph {
+      // ----
+      position: absolute;
+      top: 3rem;
+      z-index: 2;
+      margin: 1rem 1rem;
+      width: 37%;
+      max-height: 60%;
+    }
+    .dp-right {
+      right: 1rem;
+    }
+    .dp-left {
+      left: 1rem;
+    }
+    .preview-section {
+      // ----
+      position: absolute;
+      top: -4rem;
+      z-index: 2;
+      width: 50%;
+      height: 50vh;
+      background-color: $background-light;
+      border: 1px solid $accent-blue;
+      border-top: 7px solid $accent-blue;
+      padding: 1rem;
+      transform: skew(-5deg);
+      box-shadow: 2px 7px 8px -4px $background-dark;
+    }
+    .ps-right {
+      left: 2rem;
+      transform: skew(5deg);
+    }
+    .ps-left {
+      right: 2rem;
+      transform: skew(-5deg);
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: center;
       justify-content: space-between;
-      box-shadow: 1px 3px 7px black;
-      .project-title {
-        font-size: 22px;
+      color: $font-dark;
+      h2 {
+        margin: 0;
+        margin-bottom: 0.5rem;
       }
-      .header-skew {
-        transform: skew(0deg) !important;
+      span {
+        font-size: 16px;
       }
+    }
+    .built-with {
+      position: absolute;
+      bottom: -5rem;
+      border: 1px solid $accent-red;
+      height: 50px;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      i {
+        padding: 0.5rem;
+      }
+    }
+    .bw-right {
+      right: 2rem;
+    }
+    .bw-left {
+      left: 2rem;
+    }
+    p {
+      font-family: "Slabo 27px", serif;
+      font-size: 18px;
+      padding: 0 0.5rem;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
+      transition: 0.09s all cubic-bezier(1, 0.29, 0, 2.65);
+      :first-child {
+        margin-right: 0.3rem;
+      }
+      a {
+        color: $font-dark;
+      }
+      i {
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.08);
+        }
+      }
+    }
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Project {
+    width: 90%;
+    margin: 20% auto 14% auto;
+    height: 28vh;
+    .border-style {
+      position: absolute;
+      top: 5px;
+      height: 95%;
+      width: 98.5%;
+      z-index: 1;
+      border: 1px solid $accent-red;
+      border-right: 1px dashed $accent-red;
+      border-left: 1px dashed $accent-red;
+    }
+    .project-header {
+      position: absolute;
+      z-index: 2;
+      top: -2rem;
+      background-color: $accent-red;
+      padding: 0.35rem 2rem;
+      transform: skew(20deg);
+      font-size: 14px;
       h1 {
-        transform: skew(0deg) !important;
+        font-size: 28px;
       }
     }
-    .details-section {
-      .built-with {
-        position: relative;
-        text-align: center;
-        font-size: 14px;
-        left: 0.3rem !important;
-        margin: auto;
-        top: 1rem;
-        width: 100%;
+    .ph-right {
+      right: 2rem;
+      transform: skew(-20deg);
+    }
+    .ph-left {
+      left: 2rem;
+    }
+    .header-skew {
+      transform: skew(-20deg);
+    }
+    .project-title {
+      font-family: $display-font;
+      font-size: 36px;
+      font-weight: 100;
+      margin: 0;
+    }
+    .title-links {
+      color: $font-light;
+      margin: 0 0.5rem;
+    }
+    .details-paragraph {
+      position: absolute;
+      top: 1.5rem;
+      z-index: 2;
+      width: 38%;
+      max-height: 60%;
+    }
+    .dp-right {
+      right: 0rem;
+    }
+    .dp-left {
+      left: 0rem;
+    }
+    .preview-section {
+      width: 50%;
+      height: 42vh;
+      transform: skew(-5deg);
+    }
+    .ps-right {
+      left: 1.2rem;
+      transform: skew(5deg);
+    }
+    .ps-left {
+      right: 1.2rem;
+      transform: skew(-5deg);
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      color: $font-dark;
+      h2 {
+        margin: 0;
+        margin-bottom: 0.5rem;
       }
-      p {
-        padding: 1rem 0;
-        font-size: 14px;
+      span {
+        font-size: 16px;
+      }
+    }
+    .built-with {
+      position: absolute;
+      bottom: -4rem;
+      border: 1px solid $accent-red;
+      height: 40px;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      font-size: 12px;
+      i {
+        padding: 0.5rem;
+      }
+    }
+    .bw-right {
+      right: 2rem;
+    }
+    .bw-left {
+      left: 2rem;
+    }
+    p {
+      font-family: "Slabo 27px", serif;
+      font-size: 16px;
+      padding: 0 0.5rem;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
+      transition: 0.09s all cubic-bezier(1, 0.29, 0, 2.65);
+      :first-child {
+        margin-right: 0.3rem;
+      }
+      a {
+        color: $font-dark;
+      }
+      i {
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.08);
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 567px) {
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
   .Project {
-    margin-top: 15rem;
-    min-height: 55vh;
-    .preview-section {
-      left: 5.7%;
+    height: 300px;
+    width: 80%;
+    margin: 72% auto;
+
+    .border-style {
+      width: 97%;
     }
-    .details-section {
-      margin-top: 2rem;
-      .built-with {
-        position: relative;
-        text-align: center;
-        font-size: 16px;
-        left: 0.3rem !important;
-        margin: auto;
-        width: 100%;
+    .project-header {
+      position: absolute;
+      z-index: 3;
+      top: 1rem;
+      text-align: center;
+      padding: 0.35rem 1rem;
+      transform: skew(0deg);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    .header-skew {
+      transform: skew(-0deg) !important;
+    }
+    .details-paragraph {
+      top: 6.5rem;
+      text-align: center;
+      margin: 1rem auto;
+      width: 90%;
+      right: 0;
+      left: 0;
+    }
+    .preview-section {
+      top: -18rem;
+      width: 85%;
+      height: 35vh;
+      margin: 0 auto;
+    }
+    .ps-right {
+      left: 0%;
+      right: 0%;
+      transform: skew(0deg);
+    }
+    .ps-left {
+      right: 0%;
+      left: 0%;
+      transform: skew(0deg);
+    }
+    .built-with {
+      bottom: -4.6rem;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      width: 100%;
+      text-align: center;
+      i {
+        padding: 0.5rem;
       }
+    }
+    .bw-right {
+      right: 0rem;
+    }
+    .bw-left {
+      left: 0rem;
+    }
+    p {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
     }
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 321px) and (max-width: 480px) {
   .Project {
-    margin-top: 18rem;
-    min-height: 45vh;
-    .preview-section {
-      left: 5.7%;
+    height: 300px;
+    width: 95%;
+    margin: 93% auto;
+
+    .border-style {
+      width: 97%;
     }
-    .details-section {
-      margin-top: 2rem;
-      .built-with {
-        position: relative;
-        text-align: center;
-        font-size: 16px;
-        left: 0.3rem !important;
-        margin: auto;
-        width: 100%;
+    .project-header {
+      position: absolute;
+      z-index: 3;
+      top: 1rem;
+      text-align: center;
+      padding: 0.35rem 1rem;
+      transform: skew(0deg);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    .header-skew {
+      transform: skew(-0deg) !important;
+    }
+    .details-paragraph {
+      top: 5.5rem;
+      text-align: center;
+      margin: 1rem auto;
+      width: 90%;
+      right: 0;
+      left: 0;
+    }
+    .preview-section {
+      top: -15rem;
+      width: 85%;
+      height: 35vh;
+      margin: 0 auto;
+    }
+    .ps-right {
+      left: 0%;
+      right: 0%;
+      transform: skew(0deg);
+    }
+    .ps-left {
+      right: 0%;
+      left: 0%;
+      transform: skew(0deg);
+    }
+    .built-with {
+      bottom: -4.6rem;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      width: 100%;
+      text-align: center;
+      i {
+        padding: 0.5rem;
       }
+    }
+    .bw-right {
+      right: 0rem;
+    }
+    .bw-left {
+      left: 0rem;
+    }
+    p {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 321px) {
+  .Project {
+    height: 300px;
+    width: 95%;
+    margin: 93% auto;
+    .border-style {
+      width: 96%;
+    }
+    .project-header {
+      position: absolute;
+      z-index: 3;
+      top: 1rem;
+      text-align: center;
+      font-size: 14px;
+      padding: 0.35rem 1rem;
+      transform: skew(0deg);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    .header-skew {
+      transform: skew(-0deg) !important;
+    }
+    .project-title {
+      font-size: 26px;
+    }
+    .details-paragraph {
+      top: 5rem;
+      text-align: center;
+      margin: 1rem auto;
+      width: 93%;
+      right: 0;
+      left: 0;
+    }
+    .preview-section {
+      top: -13rem;
+      width: 85%;
+      height: 35vh;
+      margin: 0 auto;
+    }
+    .preview-header {
+      font-size: 10px;
+    }
+    .ps-right {
+      left: 0%;
+      right: 0%;
+      transform: skew(0deg);
+    }
+    .ps-left {
+      right: 0%;
+      left: 0%;
+      transform: skew(0deg);
+    }
+    .built-with {
+      bottom: -4.6rem;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      width: 100%;
+      text-align: center;
+      i {
+        padding: 0.5rem;
+      }
+    }
+    .bw-right {
+      right: 0rem;
+    }
+    .bw-left {
+      left: 0rem;
+    }
+    p {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
     }
   }
 }

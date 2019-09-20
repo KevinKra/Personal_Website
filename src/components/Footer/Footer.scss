@@ -1,0 +1,115 @@
+@import "../../styles/variables";
+
+.PageFooter {
+  position: relative;
+  z-index: 2;
+  min-height: 80vh;
+  background-color: $background-dark;
+  margin: 0 auto;
+  h2 {
+    padding: 1rem;
+    text-align: center;
+    font-size: $display-font;
+    color: $font-light;
+  }
+  .footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 50%;
+    padding: 1rem;
+    box-shadow: 1px 1px 15px black;
+    label {
+      padding: 0.7rem 0;
+    }
+    input {
+      font-size: 16px;
+      padding: 0.2rem;
+      border: 1px solid lightslategrey;
+      transition: 0.7s ease-in;
+      &:focus {
+        outline: none;
+        border: 1px solid $background-dark;
+      }
+    }
+    textarea {
+      padding: 0.2rem;
+      font-size: 16px;
+      border: 1px solid slategray;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      cursor: pointer;
+      padding: 1rem;
+      margin: 0.4rem 0;
+      border-radius: 5px;
+      color: white;
+      font-size: 18px;
+      background-color: $accent-red;
+      transition: 0.5s ease-in;
+      &:hover {
+        background-color: rgb(201, 27, 27);
+      }
+    }
+  }
+}
+
+@media (min-width: 1481px) {
+  .PageFooter {
+    min-height: 45vh;
+    .footer-form {
+      margin: 0 auto;
+      width: 50%;
+    }
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+}

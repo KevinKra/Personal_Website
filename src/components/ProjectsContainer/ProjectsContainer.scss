@@ -1,0 +1,114 @@
+@import "../../styles/variables";
+
+.Projects {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.tab-marker {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  color: white;
+  .tab-marker-details {
+    transform: translateY(-0.5vh);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: $accent-red;
+    box-shadow: $shadow-primary;
+    padding: 0.2rem 1.5rem;
+  }
+  h2 {
+    font-family: $display-font;
+    font-size: 24px;
+    font-weight: 100;
+    padding: 0.6rem 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1481px) {
+  .Projects > div:first-child > section {
+    margin-top: 8rem;
+  }
+
+  .Projects > div:last-child > section {
+    margin-bottom: 14rem;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Projects > div:first-child > section {
+    margin-top: 7rem;
+  }
+
+  .Projects > div:last-child > section {
+    margin-bottom: 8rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Projects > div:first-child > section {
+    margin-top: 18rem;
+  }
+
+  .Projects > div:last-child > section {
+    margin-bottom: 8rem;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .Projects > div:first-child > section {
+    margin-top: 18rem;
+  }
+
+  .Projects > div:last-child > section {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 321px) {
+  .Projects > div:first-child > section {
+    margin-top: 13rem;
+  }
+
+  .Projects > div:last-child > section {
+    margin-bottom: 6rem;
+  }
+}
