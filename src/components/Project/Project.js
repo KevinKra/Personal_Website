@@ -7,16 +7,14 @@ import "../../styles/_animations.scss";
 export default function Project(props) {
   const project = (
     <ScrollAnimation
+      className="project"
       animateIn={!props.formatTitleLeft ? "fadeInLeft" : "fadeInRight"}
       animateOnce={true}
     >
       <section className="Project">
         {/* RIGHT FORMAT SETTINGS */}
         {!props.formatTitleLeft && (
-          <section
-            className="preview-section ps-right"
-            style={{ transform: "skew(5deg)" }}
-          >
+          <section className="preview-section ps-right">
             <header className="preview-header">
               <h2>
                 {props.title}
@@ -38,11 +36,10 @@ export default function Project(props) {
         )}
         <div className="border-style"></div>
         <header
-          className="project-header"
-          style={
+          className={
             !props.formatTitleLeft
-              ? { right: "2rem", transform: "skew(-20deg)" }
-              : { left: "2rem" }
+              ? "project-header ph-right"
+              : "project-header ph-left"
           }
         >
           <div
@@ -82,8 +79,11 @@ export default function Project(props) {
           <p>{props.details}</p>
         </section>
         <div
-          className="built-with"
-          style={!props.formatTitleLeft ? { right: "2rem" } : { left: "2rem" }}
+          className={
+            !props.formatTitleLeft
+              ? "built-with bw-right"
+              : "built-with bw-left"
+          }
         >
           <i className="fab fa-2x fa-react"></i>
           <i className="fab fa-2x fa-js"></i>
@@ -106,7 +106,9 @@ export default function Project(props) {
                 >
                   <i className="fab fa-2x fa-github"></i>
                 </a>
-                <i className="fas fa-2x fa-arrow-circle-right"></i>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-2x fa-arrow-circle-right"></i>
+                </a>
               </div>
             </header>
             <InsetImage image={props.image} />
