@@ -217,29 +217,52 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media (min-width: 1281px) {
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .Project {
+    color: blue;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .Intro {
-    font-size: 18px;
+    color: red;
+    height: 70vh;
+    font-size: 16px;
     .image-1 {
-      display: none;
+      // display: none;
+      left: 0vw;
     }
     .image-2 {
-      left: -8vw;
+      left: 8vw;
     }
     .image-3 {
       visibility: hidden;
     }
     .image-5 {
-      right: -18vw;
+      right: -8vw;
+      bottom: -1vh;
     }
     .image-6 {
-      right: 16vw;
+      right: 17vw;
     }
     .image-7 {
       visibility: hidden;
     }
     .image-8 {
-      right: 35vw;
+      right: 37vw;
     }
     img {
       height: 40%;
@@ -247,7 +270,34 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Project {
+    color: yellow;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Project {
+    color: purple;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
   .Intro {
     font-size: 16px;
     .image-1 {
@@ -255,7 +305,7 @@
     }
     .image-2 {
       // display: none;
-      left: -10vw;
+      left: -25vw;
     }
     .image-3 {
       visibility: hidden;
@@ -280,7 +330,7 @@
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (min-width: 320px) and (max-width: 321px) {
   .Intro {
     font-size: 16px;
     .image-1 {
@@ -288,7 +338,7 @@
     }
     .image-2 {
       // display: none;
-      left: -25vw;
+      left: -10vw;
     }
     .image-3 {
       visibility: hidden;

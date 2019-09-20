@@ -151,7 +151,152 @@
 
 @media (min-width: 1281px) {
   .Project {
-    color: greenyellow;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 20vh;
+    padding-top: 3rem;
+    margin: 7% auto 14% auto;
+    color: $font-light;
+    background-color: $background-dark;
+    border: 1px solid $accent-blue;
+    border-bottom: 7px solid $accent-blue;
+    filter: drop-shadow(1px 3px 3px $font-dark);
+    .border-style {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 95%;
+      width: 99%;
+      z-index: 1;
+      border: 1px solid $accent-red;
+      border-right: 1px dashed $accent-red;
+      border-left: 1px dashed $accent-red;
+    }
+    .project-header {
+      position: absolute;
+      z-index: 2;
+      top: -2rem;
+      background-color: $accent-red;
+      padding: 0.35rem 2rem;
+      transform: skew(20deg);
+    }
+    .ph-right {
+      right: 4rem;
+      transform: skew(-20deg);
+    }
+    .ph-left {
+      left: 4rem;
+    }
+    .header-skew {
+      transform: skew(-20deg);
+    }
+    .project-title {
+      font-family: $display-font;
+      font-size: 36px;
+      font-weight: 100;
+      margin: 0;
+    }
+    .title-links {
+      color: $font-light;
+      margin: 0 0.5rem;
+    }
+    .details-paragraph {
+      // ----
+      position: absolute;
+      top: 3rem;
+      z-index: 2;
+      margin: 1rem 1rem;
+      width: 25%;
+      max-height: 60%;
+    }
+    .dp-right {
+      right: 3rem;
+    }
+    .dp-left {
+      left: 3rem;
+    }
+    .preview-section {
+      // ----
+      position: absolute;
+      top: -8rem;
+      z-index: 2;
+      width: 60%;
+      height: 40vh;
+      background-color: $background-light;
+      border: 1px solid $accent-blue;
+      border-top: 7px solid $accent-blue;
+      padding: 1rem;
+      transform: skew(-5deg);
+      box-shadow: 2px 7px 8px -4px $background-dark;
+    }
+    .ps-right {
+      left: 3rem;
+      transform: skew(5deg);
+    }
+    .ps-left {
+      right: 3rem;
+      transform: skew(-5deg);
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      color: $font-dark;
+      h2 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+    .built-with {
+      position: absolute;
+      bottom: -5rem;
+      border: 1px solid $accent-red;
+      height: 50px;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      i {
+        padding: 0.5rem;
+      }
+    }
+    .bw-right {
+      right: 2rem;
+    }
+    .bw-left {
+      left: 2rem;
+    }
+    p {
+      font-family: "Slabo 27px", serif;
+      font-size: 18px;
+      padding: 0 0.5rem;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
+      transition: 0.09s all cubic-bezier(1, 0.29, 0, 2.65);
+      :first-child {
+        margin-right: 0.3rem;
+      }
+      a {
+        color: $font-dark;
+      }
+      i {
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.08);
+        }
+      }
+    }
   }
 }
 
@@ -173,7 +318,136 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .Project {
-    color: green;
+    width: 95%;
+    margin: 25% auto 14% auto;
+    height: 22vh;
+    .border-style {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 95%;
+      width: 98.5%;
+      z-index: 1;
+      border: 1px solid $accent-red;
+      border-right: 1px dashed $accent-red;
+      border-left: 1px dashed $accent-red;
+    }
+    .project-header {
+      position: absolute;
+      z-index: 2;
+      top: -2rem;
+      background-color: $accent-red;
+      padding: 0.35rem 2rem;
+      transform: skew(20deg);
+      font-size: 14px;
+      h1 {
+        font-size: 28px;
+      }
+    }
+    .ph-right {
+      right: 2rem;
+      transform: skew(-20deg);
+    }
+    .ph-left {
+      left: 2rem;
+    }
+    .header-skew {
+      transform: skew(-20deg);
+    }
+    .project-title {
+      font-family: $display-font;
+      font-size: 36px;
+      font-weight: 100;
+      margin: 0;
+    }
+    .title-links {
+      color: $font-light;
+      margin: 0 0.5rem;
+    }
+    .details-paragraph {
+      position: absolute;
+      top: 1.5rem;
+      z-index: 2;
+      width: 38%;
+      max-height: 60%;
+    }
+    .dp-right {
+      right: 0rem;
+    }
+    .dp-left {
+      left: 0rem;
+    }
+    .preview-section {
+      width: 50%;
+      height: 35vh;
+
+      transform: skew(-5deg);
+    }
+    .ps-right {
+      left: 1.2rem;
+      transform: skew(5deg);
+    }
+    .ps-left {
+      right: 1.2rem;
+      transform: skew(-5deg);
+    }
+
+    .preview-header {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      color: $font-dark;
+      h2 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+    .built-with {
+      position: absolute;
+      bottom: -4rem;
+      border: 1px solid $accent-red;
+      height: 40px;
+      background-color: $background-dark;
+      border: 1px solid $accent-blue;
+      border-bottom: 7px solid $accent-blue;
+      font-size: 12px;
+      i {
+        padding: 0.5rem;
+      }
+    }
+    .bw-right {
+      right: 2rem;
+    }
+    .bw-left {
+      left: 2rem;
+    }
+    p {
+      font-family: "Slabo 27px", serif;
+      font-size: 16px;
+      padding: 0 0.5rem;
+      margin: 0;
+    }
+
+    .preview-icons {
+      color: $font-dark;
+      margin: 0 0.3rem;
+      transition: 0.09s all cubic-bezier(1, 0.29, 0, 2.65);
+      :first-child {
+        margin-right: 0.3rem;
+      }
+      a {
+        color: $font-dark;
+      }
+      i {
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.08);
+        }
+      }
+    }
   }
 }
 

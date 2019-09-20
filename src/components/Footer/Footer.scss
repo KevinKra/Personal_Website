@@ -65,8 +65,12 @@
 }
 
 @media (min-width: 1281px) {
-  .Project {
-    color: greenyellow;
+  .PageFooter {
+    min-height: 45vh;
+    .footer-form {
+      margin: 0 auto;
+      width: 50%;
+    }
   }
 }
 

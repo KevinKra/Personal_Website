@@ -33,8 +33,12 @@
 }
 
 @media (min-width: 1281px) {
-  .Project {
-    color: greenyellow;
+  .Projects > div:first-child > section {
+    margin-top: 8rem;
+  }
+
+  .Projects > div:last-child > section {
+    margin-bottom: 14rem;
   }
 }
 
@@ -55,8 +59,12 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .Project {
-    color: green;
+  .Projects > div:first-child > section {
+    margin-top: 7rem;
+  }
+
+  .Projects > div:last-child > section {
+    margin-bottom: 8rem;
   }
 }
 
