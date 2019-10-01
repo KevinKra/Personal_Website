@@ -62,30 +62,38 @@ export default class Intro extends Component {
             Email copied to clipboard.
           </div>
         </div>
-        <img src={dwarfTwo} alt="A dwarf" className="image-1 slide-appear-2" />
-        <img src={dwarfOne} alt="A dwarf" className="image-2 slide-appear-1" />
         <img
-          src={knightOne}
+          src="https://i.imgur.com/2XxB8Hh.png"
+          alt="A dwarf"
+          className="image-1 slide-appear-2"
+        />
+        <img
+          src="https://i.imgur.com/1LtllNz.png"
+          alt="A dwarf"
+          className="image-2 slide-appear-1"
+        />
+        <img
+          src="https://i.imgur.com/y28L5ah.png"
           alt="A knight"
           className="image-3 slide-appear-2"
         />
         <img
-          src={faceOne}
+          src="https://i.imgur.com/HE7kECy.png"
           alt="A males face"
           className="image-5 slide-appear-1"
         />
         <img
-          src={knightTwo}
+          src="https://i.imgur.com/U1xZGir.png"
           alt="A knight in armor"
           className="image-6 slide-appear-4"
         />
         <img
-          src={guyOne}
+          src="https://i.imgur.com/xTduqfY.png"
           alt="A man with a hat"
           className="image-7 slide-appear-2"
         />
         <img
-          src={cowboyOne}
+          src="https://i.imgur.com/vD4wztl.png"
           alt="A cowboy"
           className="image-8 slide-appear-3"
         />
