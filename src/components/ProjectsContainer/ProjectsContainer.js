@@ -20,7 +20,7 @@ export default function ProjectsContainer() {
           title="PalettePicker"
           image={imgPalettePicker}
           githubURL="https://github.com/KevinKra/PalettePicker-fe"
-          deployURL="https://google.com"
+          deployURL="https://kra-teo-palettepicker.herokuapp.com"
           details={`Have a project you want to build but you're not sure about the color
         palette? Use PalettePicker! PalettePicker lets you personalize your
         color scheme by providing a wide variety of styling options
@@ -33,16 +33,16 @@ export default function ProjectsContainer() {
           title="Light-Side"
           image={imgLightSide}
           githubURL="https://github.com/KevinKra/LightSide"
-          deployURL="https://google.com"
+          deployURL="https://github.com/KevinKra/LightSide"
           details={`LightSide is an application that uses the StarWars API (SWAPI) to present information related to the famous people, noteworthy planets, and popular vehicles, of the StarWars universe. As a user you have the ability to seamlessly sift through the data and favorite those cards that interest you and built up a collection that can be modified as you find other elements of the universe that you are fond of.`}
         />
         <Project
           formatTitleLeft={true}
-          title="Galleria"
+          title="Pixama"
           image={imgMovieTracker}
-          githubURL="https://github.com/KevinKra/Movies"
-          deployURL="https://google.com"
-          details={`Galleria brings the movie-watching experience directly to its users by providing a visually appealing interactive design that both provides the ability to login to an account and favorite content based on your personal preferences. Search through various different genre and find the movies and shows that interest you the most!`}
+          githubURL="https://github.com/KevinKra/Pixama"
+          deployURL="https://github.com/KevinKra/Pixama"
+          details={`Pixama brings the movie-watching experience directly to its users by providing a visually appealing interactive design that both provides the ability to login to an account and favorite content based on your personal preferences. Search through various different genre and find the movies and shows that interest you the most!`}
         />
       </section>
     </Fragment>
