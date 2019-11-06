@@ -156,8 +156,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-    height: 20vh;
+    width: 70%;
+    height: 25vh;
     padding-top: 3rem;
     margin: 7% auto 14% auto;
     color: $font-light;
@@ -205,12 +205,11 @@
       margin: 0 0.5rem;
     }
     .details-paragraph {
-      // ----
       position: absolute;
       top: 3rem;
       z-index: 2;
       margin: 1rem 1rem;
-      width: 25%;
+      width: 28%;
       max-height: 60%;
     }
     .dp-right {
@@ -222,10 +221,10 @@
     .preview-section {
       // ----
       position: absolute;
-      top: -8rem;
+      top: -7rem;
       z-index: 2;
-      width: 60%;
-      height: 40vh;
+      width: 52%;
+      height: 47vh;
       background-color: $background-light;
       border: 1px solid $accent-blue;
       border-top: 7px solid $accent-blue;
@@ -275,8 +274,8 @@
     }
     p {
       font-family: "Slabo 27px", serif;
-      font-size: 18px;
-      padding: 0 0.5rem;
+      font-size: 16px;
+      padding: 0rem;
       margin: 0;
     }
 
@@ -315,9 +314,9 @@
     justify-content: space-around;
     align-items: center;
     width: 85%;
-    height: 30vh;
+    height: 26vh;
     padding-top: 3rem;
-    margin: 7% auto 14% auto;
+    margin: 7% auto 20% auto;
     color: $font-light;
     background-color: $background-dark;
     border: 1px solid $accent-blue;
@@ -363,7 +362,6 @@
       margin: 0 0.5rem;
     }
     .details-paragraph {
-      // ----
       position: absolute;
       top: 3rem;
       z-index: 2;
@@ -383,7 +381,7 @@
       top: -4rem;
       z-index: 2;
       width: 50%;
-      height: 50vh;
+      height: 40vh;
       background-color: $background-light;
       border: 1px solid $accent-blue;
       border-top: 7px solid $accent-blue;
@@ -433,8 +431,8 @@
     }
     p {
       font-family: "Slabo 27px", serif;
-      font-size: 18px;
-      padding: 0 0.5rem;
+      font-size: 16px;
+      padding: 0 0rem;
       margin: 0;
     }
 
@@ -467,7 +465,7 @@
   .Project {
     width: 90%;
     margin: 20% auto 14% auto;
-    height: 28vh;
+    height: 25vh;
     .border-style {
       position: absolute;
       top: 5px;
@@ -524,8 +522,12 @@
       left: 0rem;
     }
     .preview-section {
+      top: -4rem;
+      z-index: 2;
       width: 50%;
-      height: 42vh;
+      height: 40vh;
+      padding: 1rem;
+      width: 50%;
       transform: skew(-5deg);
     }
     .ps-right {
@@ -571,8 +573,8 @@
     }
     p {
       font-family: "Slabo 27px", serif;
-      font-size: 16px;
-      padding: 0 0.5rem;
+      font-size: 15px;
+      padding: 0 0rem;
       margin: 0;
     }
 
@@ -611,8 +613,8 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   .Project {
-    height: 300px;
-    width: 80%;
+    height: 230px;
+    width: 71%;
     margin: 72% auto;
 
     .border-style {
@@ -643,7 +645,7 @@
     .preview-section {
       top: -18rem;
       width: 85%;
-      height: 35vh;
+      height: 40vh;
       margin: 0 auto;
     }
     .ps-right {
@@ -693,8 +695,8 @@
 
 @media (min-width: 321px) and (max-width: 480px) {
   .Project {
-    height: 300px;
-    width: 95%;
+    height: 260px;
+    width: 96%;
     margin: 93% auto;
 
     .border-style {
@@ -715,7 +717,7 @@
       transform: skew(-0deg) !important;
     }
     .details-paragraph {
-      top: 5.5rem;
+      top: 6rem;
       text-align: center;
       margin: 1rem auto;
       width: 90%;
@@ -770,8 +772,8 @@
 
 @media (min-width: 320px) and (max-width: 321px) {
   .Project {
-    height: 300px;
-    width: 95%;
+    height: 260px;
+    width: 96%;
     margin: 93% auto;
     .border-style {
       width: 96%;
